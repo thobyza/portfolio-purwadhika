@@ -22,7 +22,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
-    background-color: #eeeeee;;
+    background-color: #eeeeee;
 
 }
 
@@ -59,7 +59,7 @@ header {
     align-items: center;
     z-index: 5;
     background-color: var(--color-bg);
-    box-shadow: 0 15px 40px rgba(111, 111, 111, 0.1);
+    /* box-shadow: 0 15px 40px rgba(111, 111, 111, 0.1); */
 }
 
 .navbar a {
@@ -148,10 +148,14 @@ header {
     margin-bottom: 40px;
 }
 
+.intro-arrow:hover {
+    background-color: var(--color-accent);
+}
+
 .arrow-svg {
     /* font-size: 1.8rem; */
     width: 34px;
-    color: black;
+    /* color: black; */
     /* line-height: 48px; */
     padding-top: 12px;
 }
@@ -175,7 +179,6 @@ header {
 .hero-shape {
     width: 280px;
     height: 350px;
-    /* background-color: #818181; */
     background-image: linear-gradient(to bottom, #849393, #778787, #6a7b7b, #5d6f6f, #506463, #485d5b, #405554, #384e4c, #334947, #2e4442, #2a403e, #253b39);    position: absolute;
     z-index: 1;
     bottom: 180px;
@@ -196,10 +199,16 @@ header {
     color: var(--color-accent);
 }
 
+.about-top {
+    display: flex;
+    position: relative;
+}
+
 .about-p-1 {
     font-size: 3.4rem;
     width: 50%;
 }
+
 
 .div-p-2 {
     display: flex;
@@ -220,6 +229,8 @@ header {
     background-color: var(--color-bg);
     border-top-right-radius: 80px;
     border-top-left-radius: 80px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .section-work h3 {
@@ -237,20 +248,12 @@ header {
     font-weight: 500;
 }
 
-.label-1 {
-    /* border: 1px solid; */
-    border-radius: 20px;
-    padding: 10px 12px;
-    margin-right: 12px;
-    background-color: var(--color-accent);
-    color: var(--color-bg);
-}
-
 .label-2 {
     border: 1px solid #696969;
     border-radius: 20px;
     padding: 10px 12px;
     color: #696969;
+    margin-right: 12px;
 }
 
 .section-work h4 {
@@ -297,6 +300,12 @@ header {
     padding-top: 1px;
 }
 
+.work-button-inside:hover {
+    /* background-color: #0A7A5E; */
+    background-color: #118a64;
+    transition: all 0.4s ease-in-out;
+}
+
 .work-content-right img {
     height: 400px;
     border-radius: 12px;
@@ -304,4 +313,130 @@ header {
     left: 40vw; */
 }
 
+/* CONTACT */
 
+#contact h3 {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-accent);
+    margin: auto 0;
+    flex-grow: 1;
+}
+
+.contact-tag {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    justify-content: end;
+}
+
+.contact-tag a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    /*  */
+    border: 1px solid #545454;
+    border-radius: 20px;
+    padding: 10px 12px;
+    /* color: var(--color-accent); */
+    color: #545454;
+    margin-right: 10px;
+    bottom: 6px;
+}
+
+.contact-tag a:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #ffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form-section {
+    background-color: #293F3D;
+}
+
+.contact-card {
+    background-color: #627373;
+    margin-top: 6vh;
+    border-radius: 18px;
+    /* font-family: 'Space Grotesk', sans-serif; */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: flex;
+}
+
+.contact-card-left {
+    padding-left: 4vw;
+    flex-grow: 1;
+}
+
+.contact-card-left h4 {
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 5vh;
+}
+
+.contact-card-right {
+    justify-content: end;
+    flex-grow: 2;
+}
+
+.contact-card-right h4 {
+    color: white;
+    font-weight: 400;
+    font-size: 48px;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
+
+.form-input {
+    display: block;
+    width: 85%;
+    padding: 12px 0;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: rgba(255, 255, 255, 0.618);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+textarea:focus, input:focus {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+input, select, textarea{
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.form-group-btn {
+    margin-top: 4vh;
+    margin-bottom: 7vh;
+}
+
+.form-group-btn a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* font-size: 1rem; */
+    font-weight: 500;
+    background-color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 20px;
+    padding: 10px 12px;
+    color: #627373;
+}
+
+.form-group-btn a:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #ffff;
+    transition: all 0.3s ease-in-out;
+}

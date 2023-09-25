@@ -25,10 +25,10 @@
         <!-- label for mobile -->
         <a href="#" class="logo">THOBY/ZA.</a>
         <nav class="navbar">
-          <a href="#">HOME</a>
-          <a href="#">WORK</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
+          <a href="#intro">HOME</a>
+          <a href="#about">ABOUT</a>
+          <a href="#work">WORK</a>
+          <a href="#contact">CONTACT</a>
         </nav>
         <label for="" class="icons">
           <i class="bx bx-menu-alt-right"></i>
@@ -37,7 +37,7 @@
     </div>
 
     <!-- Intro -->
-    <section class="section-padding section-intro">
+    <section id="intro" class="section-padding section-intro">
       <div class="container intro-container">
         <div class="content-left">
           <h3>
@@ -63,9 +63,9 @@
     </section>
 
     <!-- About me -->
-    <section class="section-padding section-about">
+    <section id="about" class="section-padding section-about">
       <div class="container">
-        <div class="about-top">
+        <div>
           <h3>ABOUT-ME</h3>
           <p class="about-p-1">
             Enhancing brands' digital presence by combining function and form.
@@ -83,88 +83,88 @@
     </section>
 
     <!-- Work -->
-    <section class="section-padding section-work">
+    <section id="work" class="section-padding section-work">
       <div class="container">
         <h3>SELECTED-WORKS</h3>
 
         <!-- Content 1 -->
         <div class="work-content" style="display: flex; position: relative;">
-          <div class="work-content-left">
-            <div class="work-tag">
-              <div class="label-1">Digital Design</div>
-              <div class="label-2">Web Development</div>
-            </div>
-  
-            <div>
-              <h4>WeatherEd</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus praesentium distinctio alias magni a repellat dolore perspiciatis architecto rerum!</p>
-            </div>
-  
-            <div class="work-button">
-              <div class="work-button-inside">
-                <a href="" class="work-button">See more</a>
-                <i class="ri-arrow-right-line"></i>
-              </div>
-            </div>
-          </div>
-  
-          <div class="work-content-right">
-            <img src="./weathered_page2.png" alt="">
-          </div>
-        </div>
-
-        <!-- Content 2 -->
-        <div class="work-content" style="display: flex; position: relative; margin-top: 10vh;">
 
           <div class="work-content-left-2">
             <div class="work-tag">
-              <div class="label-1">Digital Design</div>
+              <div class="label-2">Concept</div>
               <div class="label-2">Web Development</div>
             </div>
   
             <div>
-              <h4>WeatherEd</h4>
+              <h4>Virus Scope</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus praesentium distinctio alias magni a repellat dolore perspiciatis architecto rerum!</p>
             </div>
   
             <div class="work-button">
-              <div class="work-button-inside">
-                <a href="" class="work-button">See more</a>
+              <div class="work-button-inside" style="cursor: pointer;" onclick="window.location='https://virusscope.netlify.app';">
+                <a href="https://virusscope.netlify.app" class="work-button">See more</a>
                 <i class="ri-arrow-right-line"></i>
               </div>
             </div>
           </div>
 
           <div class="work-content-right">
-            <img src="./weathered_page2.png" alt="">
+            <img src="./virusscope-1 - Copy.png" alt="">
           </div>
 
+        </div>
+
+        <!-- Content 2 -->
+        <div class="work-content" style="display: flex; position: relative; margin-top: 12vh;">
+          <div class="work-content-left">
+            <div class="work-tag">
+              <div class="label-2">Digital Design</div>
+              <div class="label-2">Web Development</div>
+            </div>
+            
+            <div>
+              <h4>WeatherEd</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus praesentium distinctio alias magni a repellat dolore perspiciatis architecto rerum!</p>
+            </div>
+            
+            <div class="work-button">
+              <div class="work-button-inside" style="cursor: pointer;" onclick="window.location='https://weather-ed.netlify.app';">
+                <a href="https://weather-ed.netlify.app/" class="work-button">See more</a>
+                <i class="ri-arrow-right-line"></i>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work-content-right">
+            <img src="./weathered_page - Copy (2).png" alt="">
+          </div>
         </div>
 
         <!-- Content 3 -->
-        <div class="work-content" style="display: flex; position: relative; margin-top: 10vh;">
+        <div class="work-content" style="display: flex; position: relative; margin-top: 12vh;">
 
           <div class="work-content-left-2">
             <div class="work-tag">
-              <div class="label-1">Digital Design</div>
+              <div class="label-2">Product Design</div>
               <div class="label-2">Web Development</div>
             </div>
   
             <div>
-              <h4>WeatherEd</h4>
+              <h4>Ateliers Z+A</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus praesentium distinctio alias magni a repellat dolore perspiciatis architecto rerum!</p>
             </div>
   
             <div class="work-button">
-              <div class="work-button-inside">
-                <a href="" class="work-button">See more</a>
+              <div class="work-button-inside" style="cursor: pointer;" onclick="window.location='https://ateliers-za.netlify.app';">
+                <a href="https://ateliers-za.netlify.app" class="work-button">See more</a>
                 <i class="ri-arrow-right-line"></i>
               </div>
             </div>
           </div>
 
           <div class="work-content-right">
-            <img src="./weathered_page2.png" alt="">
+            <img src="./ateliersza_page2.png" alt="">
           </div>
 
         </div>
@@ -173,8 +173,44 @@
 
     <!-- Contact -->
     <section id="contact" class="section-padding">
-      <div class="container">
+      <div class="container" style="display: flex">
+        <h3>GET-IN-TOUCH</h3>
 
+        <div class="contact-tag">
+          <div><a href="https://www.linkedin.com/in/thoby-athaya-za-a56b30186/">LinkedIn</a></div>
+          <div><a href="#">Email</a></div>
+          <div><a href="#">Instagram</a></div>
+        </div>
+
+        <div class="contact-form-section">
+          
+        </div>
+      </div>
+
+      <!-- contact card -->
+      <div id="" class="container">
+        <div class="contact-card">
+          <div class="contact-card-left">
+            <h4>Let's get talking!</h4>
+          </div>
+          <div class="contact-card-right">
+            <h4>Message</h4>
+            <form action="#">
+              <div class="form-group">
+                <input type="text" class="form-input" placeholder="Your Name" >
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-input" placeholder="yourname@mail.com">
+              </div>
+              <div class="form-group">
+                <textarea name="" rows="5" class="form-input" placeholder="Hello there..."></textarea>
+            </div>
+            <div class="form-group-btn">
+              <a href="#">Submit</a>
+            </div>
+            </form>
+          </div>
+        </div>
       </div>
 
     </section>
